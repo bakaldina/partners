@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Партнеры Недра-Эксперт</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="header-mobile">
+        <input class="menu-check" type="checkbox" id="menu-check-mobile">
+        <div class="header-mobile__panel">
+            <label for="menu-check-mobile" class="header-mobile__panel_burger">
+                <span></span>
+            </label>
+            <div class="header-mobile__panel_title">
+                <p>поиск участков</p>
+            </div>
+            <div class="header-mobile__panel_btn"></div>
+        </div>
+        <div class="header-mobile__menu">
+            <div class="header-mobile__menu_item">
+                <div class="header-mobile__menu_item-info-logo">
+                    <a href="index.html">
+                        NEDRA EXPERT
+                    </a>
+                </div>
+                <ul class="main-menu">
+                    <li class="main-menu_list">
+                        <a href="/search">поиск участков</a>
+                    </li>
+                    <li class="main-menu_list">
+                        <a href="/ratings">рейтинги</a>
+                    </li>
+                    <li class="main-menu_list">
+                        <a href="/analytics">аналитика</a>
+                    </li>
+                    <li class="main-menu_list">
+                        <a href="/reference">справочники</a>
+                    </li>
+                    <li class="main-menu_list">
+                        <a href="/assessment">оценка</a>
+                    </li>
+                </ul>
+                <ul class="register-menu">
+                    <li class="register-menu_list">
+                        <a href="/Account/Login">вход</a>
+                    </li>
+                    <li class="register-menu_list">
+                        <a href="/Account/Register">регистрация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="header__menu">
+            <div class="header__menu_item">
+                <ul>
+                    <a href="https://nedraexpert.ru">
+                        <div class="main-logo"></div>
+                    </a>
+                    <li class="menu_icon">
+                        <a href="javascript:;" id="menu_icon">
+                            <span></span>
+                        </a>
+                    </li>
+                    <li class="center">
+                        <a href="/search">поиск участков</a>
+                    </li>
+                    <li class="center">
+                        <a href="/ratings">рейтинги</a>
+                    </li>
+                    <li class="center">
+                        <a href="/analytics">аналитика</a>
+                    </li>
+                    <li class="center">
+                        <a href="/reference ">справочники</a>
+                    </li>
+                    <li class="center">
+                        <a href="/assessment ">оценка</a>
+                    </li>
+                    <li class="right">
+                        <a href="/Account/Login">вход</a>
+                    </li>
+                    <li class="right">
+                        <a href="/Account/Register">регистрация</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dop_menu">
+                <ul>
+                    <li class="center">
+                        <a href="/wip">Цены</a>
+                    </li>
+                    <li class="center">
+                        <a href="/wip">Карты</a>
+                    </li>
+                    <li class="center">
+                        <a href="/wip">Опросы</a>
+                    </li>
+                    <li class="center">
+                        <a href="/wip">Партнеры</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h1>Партнеры Недра-Эксперт</h1>
+    </div>
+
+    <div class="main">
+        <div class="main__menu"></div>
+        <div class="main__container">
+            <div class="main__container_1" onclick="modalOpen()">
+                <img src="image/company1-logo.png" alt="ОГК Групп">
+                <p>«ОГК Групп» («Объединенная геологоразведочная компания») – одна из крупнейших независимых российских сервисных
+                    компаний, осуществляющая полный комплекс услуг для недропользователей.
+                    <br>
+                    <br>
+                    <a href="http://www.ogkgroup.ru/" target="_blank">http://www.ogkgroup.ru/</a>
+                </p>
+            </div>
+            <div class="main__container_2">
+            </div>
+
+            <div class="modals" id="modals">
+                <div class="modals__overlay" onclick="modalClose()">
+                </div>
+                <div class="modals__content">
+                    <div class="modals__container">
+                        <img src="image/company1-logo.png" alt="ОГК Групп">
+                        <p>«ОГК Групп» («Объединенная геологоразведочная компания») – одна из крупнейших независимых российских
+                            сервисных компаний, осуществляющая полный комплекс услуг для недропользователей.
+                            <br>
+                            <br>
+                            <a href="http://www.ogkgroup.ru/" target="_blank">http://www.ogkgroup.ru/</a>
+                        </p>
+                        <p>Бурение Производит все виды бурения на твердые полезные ископаемые, оказывае услуги по проведению
+                            геологоразведочных работ под ключ Буровзрывные работы Специализируется на выполнении буровзрывных
+                            работ на объектах нефтегазовой, энергетической, горнодобывающей промышленности. Нефтесервис Осуществляет
+                            обширный комплекс услуг, для предприятий по добыче нефти и газа, на стадии ГРР, и на стадии эксплуатации
+                            месторождений. За 5 лет существования группы провели работы более чем на 45 объектах</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__item">
+            <div class="footer__item_column">
+                <ul class="footer__item_column-1">
+                    <li>
+                        <a href="/search">Поиск участков</a>
+                    </li>
+                    <li>
+                        <a href="/ratings">Рейтинги</a>
+                    </li>
+                    <li>
+                        <a href="/analytics">Аналитика</a>
+                    </li>
+                    <li>
+                        <a href="/reference ">Справочники</a>
+                    </li>
+                    <li>
+                        <a href="/confidential ">Политика конфиденциальности</a>
+                    </li>
+                    <li class="copyright">
+                        © 2018 Nedra-Expert
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item_column">
+                <ul class="footer__item_column-3">
+                    <li class="">
+                        <a href="/about-us">О нас</a>
+                    </li>
+                    <li class="">
+                        <a href="/contacts">Контакты</a>
+                    </li>
+                    <li class="">
+                        <a href="/offer">Пользовательское соглашение</a>
+                    </li>
+                    <li class="li-text-color">
+                        <a href="tel:+74951158916">+7 (495) 115-8916</a>
+                    </li>
+                    <li class="li-text-color">
+                        <a href="mailto:info@nedraexpert.ru">info@nedraexpert.ru</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item_column">
+                <ul class="footer__item_column-3">
+                    <li class="li-text-color">
+                        <a href="/Account/Login">Вход</a>
+                    </li>
+                    <li class="li-text-color">
+                        <a href="/Account/Register">Регистрация</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item_column footer__item_column-4">
+                <p>Разработано в «Роскомпьютинг»</p>
+                <a href="http://www.roscomputing.com/ru/Main.aspx" target="_blank">
+                    <img src="image/rc_logo.png" title="RosComputing">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-mobile">
+        <div class="footer-mobile__item">
+            <div class="footer-mobile__item_column">
+                <ul class="footer-mobile__item_column-1">
+                    <li class="">
+                        <a href="/search">Поиск участков</a>
+                    </li>
+                    <li class="">
+                        <a href="/ratings">Рейтинги</a>
+                    </li>
+                    <li class="">
+                        <a href="/analytics">Аналитика</a>
+                    </li>
+                    <li class="">
+                        <a href="/reference ">Справочники</a>
+                    </li>
+                    <li class="">
+                        <a href="/confidential ">Политика конфиденциальности</a>
+                    </li>
+                    <li class="">
+                        <a href="/about-us">О нас</a>
+                    </li>
+                    <li class="">
+                        <a href="/contacts">Контакты</a>
+                    </li>
+                    <li class="">
+                        <a href="/offer">Пользовательское соглашение</a>
+                    </li>
+                    <li class="li-text-color">
+                        <a href="tel:+74951158916">+7 (495) 115-8916</a>
+                    </li>
+                    <li class="li-text-color">
+                        <a href="email: info@nedraexpert.ru">info@nedraexpert.ru</a>
+                    </li>
+                    <li class="copyright">
+                        © 2018 Nedra-Expert
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-mobile__item_column">
+                <ul class="footer-mobile__item_column-2">
+                    <li class="li-text-color">
+                        <a href="/Account/Login">Вход</a>
+                    </li>
+                    <li class="li-text-color">
+                        <a href="/Account/Register">Регистрация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-mobile__item_end">
+            <p>Разработано в «Роскомпьютинг»</p>
+            <a href="http://www.roscomputing.com/ru/Main.aspx" target="_blank">
+                <img src="image/rc_logo.png" title="RosComputing">
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

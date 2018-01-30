@@ -13,13 +13,13 @@ $(document).ready(function() {
   });
 });
 
-function modalOpen() {
+function modalOpen(number) {
   if (window.screen.width > 768) {
-    $("#modals").show();
+    $("#modals" + number).show();
   }
 }
-function modalClose() {
+function modalClose(number) {
   if (window.screen.width > 768) {
-    $("#modals").hide();
+    $("#modals" + number).hide();
   }
 }

@@ -210,34 +210,60 @@ h1 {
     box-shadow: 0px 9px 16px -5px grey;
   }
   &__container {
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     height: auto;
     max-width: 964px;
     margin: auto;
     margin-bottom: 50px;
     font-size: 0;
-    & p {
-      font-size: 16px;
-      margin: 5px;
-      padding: 15px;
-    }
     &_1 {
       width: 40%;
       background-color: @color_white;
       box-shadow: 0px 9px 16px -5px grey;
-      text-align: left;
-      display: inline-block;
       vertical-align: top;
       cursor: pointer;
+      text-align: center;
+      font-size: 16px;
+      &-logo {
+        height: 170px;
+        img {
+          width: 300px;
+        }
+      }
       &-text {
-        text-align: center;
+        height: 100px;
+        padding: 0 10px;
+      }
+      &-email {
+        height: 30px;
+        color: #202f60;
       }
     }
     &_2 {
-      width: 50%;
-      text-align: left;
-      display: inline-block;
+      width: 40%;
+      background-color: @color_white;
+      box-shadow: 0px 9px 16px -5px grey;
       vertical-align: top;
+      cursor: pointer;
+      text-align: center;
+      font-size: 16px;
+      &-logo {
+        height: 170px;
+        img {
+          width: 300px;
+          margin: 43px 0;
+        }
+      }
+      &-text {
+        height: 100px;
+        padding: 0 10px;
+      }
+      &-email {
+        height: 30px;
+        color: #202f60;
+      }
     }
   }
 }
@@ -265,14 +291,27 @@ h1 {
   &__container {
     cursor: pointer;
     width: 100%;
-    height: 700px;
+    height: auto;
+    min-height: 700px;
     background-color: @color_white;
     box-shadow: 0px 9px 16px -5px grey;
     p {
-      font-size: 20px;
+      font-size: 19px;
       width: 70%;
       margin: auto;
-      text-align: left;
+      text-align: justify;
+    }
+    &-logo {
+      height: 170px;
+      cursor: pointer;
+      img {
+        width: 300px;
+        margin: 20px 60px;
+      }
+    }
+    &-text {
+      height: 500px;
+      margin: 35px 0;
     }
   }
   .close {
@@ -281,6 +320,11 @@ h1 {
     right: -10px;
     top: -10px;
     width: 50px;
+  }
+  .weight {
+    font-size: 23px;
+    font-weight: 900;
+    line-height: 1.8;
   }
 }
 .footer {

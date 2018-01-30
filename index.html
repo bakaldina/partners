@@ -123,44 +123,107 @@
     <div class="main">
         <div class="main__menu"></div>
         <div class="main__container">
-            <div class="main__container_1" onclick="modalOpen()">
-                <img src="image/company1-logo.png" alt="ОГК Групп">
-                <p class="main__container_1-text">«ОГК Групп» («Объединенная геологоразведочная компания») – одна из крупнейших независимых российских сервисных
-                    компаний, осуществляющая полный комплекс услуг для недропользователей.
-                    <br>
-                    <br>
+            <div class="main__container_1" onclick="modalOpen('')">
+                <div class="main__container_1-logo">
+                    <img src="image/company1-logo.png" alt="ОГК Групп">
+                </div>
+                <div class="main__container_1-text">
+                    <p>«ОГК Групп» («Объединенная геологоразведочная компания») – одна из крупнейших независимых российских
+                        сервисных компаний, осуществляющая полный комплекс услуг для недропользователей.</p>
+                </div>
+                <div class="main__container_1-email">
                     <a href="http://www.ogkgroup.ru/" target="_blank">http://www.ogkgroup.ru/</a>
-                </p>
+                </div>
             </div>
-            <div class="main__container_2">
+            <div class="main__container_2" onclick="modalOpen(1)">
+                <div class="main__container_2-logo">
+                    <img src="image/company2-logo.png" alt="ГЕО">
+                </div>
+                <div class="main__container_2-text">
+                    <p>ООО «Гео Солюшенс» - горно-геологическая консалтинговая компания, надежный партнер на рынке твердых полезных
+                        ископаемых России
+                    </p>
+                </div>
+                <div class="main__container_2-email">
+                    <a href="http://geo-sol.ru/" target="_blank">http://geo-sol.ru/</a>
+                </div>
+                </p>
             </div>
 
             <div class="modals" id="modals">
-                <div class="modals__overlay" onclick="modalClose()">
+                <div class="modals__overlay" onclick="modalClose('')">
                 </div>
-                <div class="modals__content" onclick="modalClose()">
+                <div class="modals__content" onclick="modalClose('')">
                     <div class="modals__container">
-                        <img src="image/company1-logo.png" alt="ОГК Групп">
+                        <div class="modals__container-logo">
+                            <a href="http://www.ogkgroup.ru/" target="_blank">
+                                <img src="image/company1-logo.png" alt="ОГК Групп">
+                            </a>
+                        </div>
                         <img class="close" src="image/close-icon.jpg" alt="Закрыть">
-                        <p>«ОГК Групп» («Объединенная геологоразведочная компания») – одна из крупнейших независимых российских
-                            сервисных компаний, осуществляющая полный комплекс услуг для недропользователей.
-                            <br>
-                            <br>
-                            <a href="http://www.ogkgroup.ru/" target="_blank">http://www.ogkgroup.ru/</a>
-                        </p>
-                        <p class="modals__container-text">Бурение
-                            <br>Производит все виды бурения на твердые полезные ископаемые, оказывае услуги по проведению геологоразведочных
-                            работ под ключ
-                            <br>Буровзрывные работы
-                            <br>Специализируется на выполнении буровзрывных работ на объектах нефтегазовой, энергетической, горнодобывающей
-                            промышленности.
-                            <br>Нефтесервис
-                            <br> Осуществляет обширный комплекс услуг, для предприятий по добыче нефти и газа, на стадии ГРР,
-                            и на стадии эксплуатации месторождений.
-                            <br>За 5 лет существования группы провели работы более чем на 45 объектах</p>
+                        <div class="modals__container-text">
+                            <p>
+
+                                <p class="modals__container-text-item">
+                                    <span class="weight">«ОГК Групп» («Объединенная геологоразведочная компания»)</span> – одна из крупнейших
+                                    независимых российских сервисных компаний, осуществляющая полный комплекс услуг для недропользователей.
+                                    <br>
+                                    <span class="weight">Бурение</span>
+                                    <br>Производит все виды бурения на твердые полезные ископаемые, оказывает услуги по проведению
+                                    геологоразведочных работ под ключ
+                                    <br>
+                                    <span class="weight">Буровзрывные работы</span>
+                                    <br>Специализируется на выполнении буровзрывных работ на объектах нефтегазовой, энергетической,
+                                    горнодобывающей промышленности.
+                                    <br>
+                                    <span class="weight">Нефтесервис</span>
+                                    <br> Осуществляет обширный комплекс услуг, для предприятий по добыче нефти и газа, на стадии
+                                    ГРР, и на стадии эксплуатации месторождений.
+                                    <br>За 5 лет существования группы провели работы более чем на 45 объектах</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="modals" id="modals1">
+                <div class="modals__overlay" onclick="modalClose(1)">
+                </div>
+                <div class="modals__content" onclick="modalClose(1)">
+                    <div class="modals__container">
+                        <div class="modals__container-logo">
+                            <a href="http://geo-sol.ru/" target="_blank">
+                                <img src="image/company2-logo.png" alt="ГЕО">
+                            </a>
+                        </div>
+                        <img class="close" src="image/close-icon.jpg" alt="Закрыть">
+                        <div class="modals__container-text">
+                            <p>
+                                <span class="weight">ООО «Гео Солюшенс»
+                                </span> – горно-геологическая консалтинговая компания надежный партнер на рынке твердых полезных
+                                ископаемых России.</p>
+
+                            <p class="modals__container-text-item">
+                                <span class="weight">Направления деятельности компании:</span>
+                                <br>Компетентное сопровождение поисковых и разведочных работ:
+                                <br>
+                                <br> - Оценка перспективности участков недр, определение целей и методологии ГРР
+                                <br> - Разработка/оценка программ и проектов геологического изучения участков недр на любой стадии
+                                <br> - Организация и управление геологоразведочными работами
+                                <br>
+                                <br>
+                                <span class="weight">Оценка запасов месторождений любой сложности</span>
+                                <br>
+                                <span class="weight">Выбор лучшего варианта развития проекта</span>
+                                <br>
+                                <span class="weight">Аудит горно-обогатительных предприятий</span>
+                                <br>
+                                <span class="weight">Корпоративный консалтинг в сфере недропользования</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 

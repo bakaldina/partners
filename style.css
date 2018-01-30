@@ -188,6 +188,8 @@ h1 {
   box-shadow: 0px 9px 16px -5px grey;
 }
 .main__container {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
   height: auto;
   max-width: 964px;
@@ -195,28 +197,52 @@ h1 {
   margin-bottom: 50px;
   font-size: 0;
 }
-.main__container p {
-  font-size: 16px;
-  margin: 5px;
-  padding: 15px;
-}
 .main__container_1 {
   width: 40%;
   background-color: #fff;
   box-shadow: 0px 9px 16px -5px grey;
-  text-align: left;
-  display: inline-block;
   vertical-align: top;
   cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+}
+.main__container_1-logo {
+  height: 170px;
+}
+.main__container_1-logo img {
+  width: 300px;
 }
 .main__container_1-text {
-  text-align: center;
+  height: 100px;
+  padding: 0 10px;
+}
+.main__container_1-email {
+  height: 30px;
+  color: #202f60;
 }
 .main__container_2 {
-  width: 50%;
-  text-align: left;
-  display: inline-block;
+  width: 40%;
+  background-color: #fff;
+  box-shadow: 0px 9px 16px -5px grey;
   vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+}
+.main__container_2-logo {
+  height: 170px;
+}
+.main__container_2-logo img {
+  width: 300px;
+  margin: 43px 0;
+}
+.main__container_2-text {
+  height: 100px;
+  padding: 0 10px;
+}
+.main__container_2-email {
+  height: 30px;
+  color: #202f60;
 }
 .modals {
   display: none;
@@ -243,15 +269,28 @@ h1 {
 .modals__container {
   cursor: pointer;
   width: 100%;
-  height: 700px;
+  height: auto;
+  min-height: 700px;
   background-color: #fff;
   box-shadow: 0px 9px 16px -5px grey;
 }
 .modals__container p {
-  font-size: 20px;
+  font-size: 19px;
   width: 70%;
   margin: auto;
-  text-align: left;
+  text-align: justify;
+}
+.modals__container-logo {
+  height: 170px;
+  cursor: pointer;
+}
+.modals__container-logo img {
+  width: 300px;
+  margin: 20px 60px;
+}
+.modals__container-text {
+  height: 500px;
+  margin: 35px 0;
 }
 .modals .close {
   position: absolute;
@@ -259,6 +298,11 @@ h1 {
   right: -10px;
   top: -10px;
   width: 50px;
+}
+.modals .weight {
+  font-size: 23px;
+  font-weight: 900;
+  line-height: 1.8;
 }
 .footer {
   height: 270px;

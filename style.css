@@ -37,7 +37,7 @@ h1 {
   font-size: 64px;
 }
 .header {
-  background: url(image/main_img-partners1.png) no-repeat;
+  background: url(image/main_img-partners3.jpg) no-repeat;
   background-position: 0 15%;
   background-size: cover;
   position: relative;
@@ -197,13 +197,8 @@ h1 {
 }
 .main__container p {
   font-size: 16px;
-  text-indent: 30px;
   margin: 5px;
-  text-align: center;
   padding: 15px;
-}
-.main__container p.text {
-  text-align: center;
 }
 .main__container_1 {
   width: 40%;
@@ -214,6 +209,9 @@ h1 {
   vertical-align: top;
   cursor: pointer;
 }
+.main__container_1-text {
+  text-align: center;
+}
 .main__container_2 {
   width: 50%;
   text-align: left;
@@ -223,7 +221,7 @@ h1 {
 .modals {
   display: none;
   position: fixed;
-  width: 1200px;
+  width: 1000px;
   left: 50%;
   top: 50%;
   z-index: 2;
@@ -250,9 +248,15 @@ h1 {
 }
 .modals__container p {
   font-size: 20px;
-  width: 100%;
-  text-align: center;
-  padding: 50px 150px 0 150px;
+  width: 70%;
+  margin: auto;
+  text-align: left;
+}
+.modals .close {
+  position: absolute;
+  right: -23px;
+  top: -23px;
+  width: 50px;
 }
 .footer {
   height: 270px;

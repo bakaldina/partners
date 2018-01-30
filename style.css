@@ -37,8 +37,8 @@ h1 {
   font-size: 64px;
 }
 .header {
-  background: url(image/main_img.jpg) no-repeat;
-  background-position: 12% 15%;
+  background: url(image/main_img-partners1.png) no-repeat;
+  background-position: 0 15%;
   background-size: cover;
   position: relative;
   width: 100%;
@@ -212,6 +212,7 @@ h1 {
   text-align: left;
   display: inline-block;
   vertical-align: top;
+  cursor: pointer;
 }
 .main__container_2 {
   width: 50%;
@@ -246,6 +247,12 @@ h1 {
   height: 700px;
   background-color: #fff;
   box-shadow: 0px 9px 16px -5px grey;
+}
+.modals__container p {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 50px 150px 0 150px;
 }
 .footer {
   height: 270px;

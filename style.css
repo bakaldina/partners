@@ -544,17 +544,47 @@ h1 {
   /* Мэйн моб */
   .main__container {
     padding: 0 10px;
+    flex-direction: column;
   }
-  .main__container_1,
-  .main__container_2 {
+  .main__container_1 {
     display: block;
     width: 100%;
+    margin-bottom: 30px;
+  }
+  .main__container_1-logo {
+    height: 120px;
+  }
+  .main__container_1-logo img {
+    width: 220px;
+  }
+  .main__container_1-text {
+    height: 150px;
+  }
+  .main__container_1-email {
+    height: 50px;
+  }
+  .main__container_2 {
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .main__container_2-logo {
+    height: 120px;
+  }
+  .main__container_2-logo img {
+    width: 220px;
+  }
+  .main__container_2-text {
+    height: 150px;
+  }
+  .main__container_2-email {
+    height: 50px;
   }
   h1 {
-    padding-left: 0;
-    padding-top: 150px;
-    font-size: 40px;
+    top: 55%;
+    left: 0;
     text-align: center;
+    font-size: 40px;
   }
   /* Футер моб */
   .footer {
